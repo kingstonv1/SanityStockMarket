@@ -165,3 +165,4 @@ configuration.json
 /lib64/ #duplicate but the first one doesn't work??
 /bin/
 pyvenv.cfg
+lib64
