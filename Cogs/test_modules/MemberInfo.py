@@ -5,8 +5,8 @@ class MemberInfo(commands.Cog):
     def __init__(self, bot) -> None:
         self.bot = bot
 
-    def setup(bot):
-        client.add_cog(MemberInfo(bot))
+    def setup(self, bot):
+        self.bot.add_cog(MemberInfo(bot))
 
     @commands.command()
     async def account_age(self, ctx, *, member = None):

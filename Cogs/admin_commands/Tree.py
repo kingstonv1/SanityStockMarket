@@ -6,6 +6,7 @@ class Tree(commands.Cog):
         self.bot = bot
 
     @commands.command()
-    async def sync_tree(self, ctx, *):
-        await discord.app_commands.CommandTree.sync(*, guild = "1219773166600196116")
+    async def sync_tree(self, ctx):
+        await discord.app_commands.CommandTree.sync(guild = "1219773166600196116")
+        await ctx.send("Sync completed!")
 
